@@ -1,5 +1,5 @@
 {
-  "name": "html5-autolint",
+  "name": "@syslambda/html5-autolint",
   "version": "0.1.0",
   "description": "Using @mozilla/html5-lint automatically on an entire folder.",
   "main": "src/index.js",

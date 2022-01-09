@@ -7,8 +7,8 @@ const html5lint = require('html5-lint');
 if (!process.argv[2]) {
     console.log('• Looks like no path has been specified.');
     console.log('  Syntax: html5-autolint <dir>');
-	console.log();
-    process.exit(2);
+    console.log();
+    process.exit(1);
 }
 
 let dir;
@@ -17,9 +17,9 @@ try {
 } catch (e) {
     console.log('• Looks like the specified path was wrong.');
     console.log('  Syntax: html5-autolint <dir>');
-	console.log();
+    console.log();
     console.log(e);
-    process.exit(2);
+    process.exit(1);
 }
 
 console.log(`Running HTML5Lint on every .html file in ${dir}.`);
